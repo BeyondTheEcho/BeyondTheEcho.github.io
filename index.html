@@ -8,25 +8,29 @@
   <meta name="author" content="Stelios Klapsis">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 <style>
-    .myGradientDiv {
-    background: #FFFFFF;
-    background: -moz-linear-gradient(45deg, #FFFFFF 0%, #289CE8 50%, #FFFFFF 100%);
-    background: -webkit-linear-gradient(45deg, #FFFFFF 0%, #289CE8 50%, #FFFFFF 100%);
-    background: linear-gradient(45deg, #FFFFFF 0%, #289CE8 50%, #FFFFFF 100%);
+    h1, h2, h3, h4 {
+      font-family: Impact, Charcoal, sans-serif;
+    }
+    div {   
+      padding: 10px;
+      border:5px ridge #310fee;
+      border-width:4px;
+      border-style:ridge;
+      border-color:black;
     }
 </style>
+<link rel="stylesheet" href="/CSS/Styles.css">
 </head>
 <body>
     
 <!-- This is a comment tag added to display the proper format for a comment in HTML -->
 
-<div class="myGradientDiv">
-    
+<div class="professional">
 <h1>Stelios Klapsis's Website</h1>
     
 <hr>
     
-<h2>Stelios Klapsis</h2>
+<h2 id="styledtitle">Stelios Klapsis</h2>
     
 <img src="/Images/Me_Silhouette.png" alt="A Placeholder for a picture of Stelios" usemap="#myImageMap">
 <map name="myImageMap">
@@ -35,7 +39,7 @@
     
 <hr>
     
-<h3>My Biography</h3>
+<h3 class="smallcaps underline" style="font-size: 30px">My Biography</h3>
     
 <hr>
 
@@ -70,49 +74,53 @@ Below you will also find a list of the classic video games I recreated on my jou
 <a href="/portfolio.html" target="_blank">HERE</a>.
 </p>
     
+</div>
+    
+<div class="personal">
+    
 <hr>
-    <h4 id="games_list">Games I have recreated</h4>
+    <h4 id="games_list" class="smallcaps underline">Games I have recreated</h4>
 <hr>
 <ol>
   <li>Pacman</li>
     <ul>
-        <li>
+        <li class="caps">
             Pacman was the first game I attempted to recreated which proved to be a challenge. In retrospect I should have started with Pong.
         </li>
     </ul>
   <li>Pong</li>
     <ul>
-        <li>
+        <li class="caps">
             Pong was fairly easy to create given preivous experience but still a good learning opportunity.
         </li>
     </ul>
   <li>Mario</li>
     <ul>
-        <li>
+        <li class="caps">
             Maro was one of the more complex games from the NES era that I had ever worked on. It took considerable time to finish and polish.
         </li>
     </ul>
   <li>Galaga</li>
     <ul>
-        <li>
+        <li class="caps">
             Galaga is my favorite classic game and thought it took forever to finish I enjoyed every moment of it.
         </li>
     </ul>
   <li>Brick Breaker</li>
     <ul>
-        <li>
+        <li class="caps">
             Brick Breaker was an ideal game to learn how the physics system within Unity worked as well as the math needed to make it do what I wanted
         </li>
     </ul>
   <li>2D Racers</li>
     <ul>
-        <li>
+        <li class="caps">
             I worked on a variety of differnt simple 2D racer games.
         </li>
     </ul>
   <li>2D Top Down Space Shooters</li>
     <ul>
-        <li>
+        <li class="caps">
             This is a game I revisit time and again, perhaps it wormed its way into my heart as a child. Somehow they never seem to get old.
         </li>
     </ul>
@@ -120,7 +128,7 @@ Below you will also find a list of the classic video games I recreated on my jou
     
 <hr>
 
-<h4>My Hobbies</h4>
+<h4 class="smallcaps underline">My Hobbies</h4>
     
 <ul>
   <li>Programming</li>
@@ -133,7 +141,7 @@ Below you will also find a list of the classic video games I recreated on my jou
 
 <hr>
     
-<h4>My Favorite Games</h4>
+<h4 class="smallcaps underline">My Favorite Games</h4>
     
 <ul>
   <li>Knight of the Old Republic 1 & 2</li>
@@ -150,7 +158,7 @@ Below you will also find a list of the classic video games I recreated on my jou
 
 <hr>
 
-<p>This long journey has taught me much however, I believe the words of Scott Rogers would be more apt than my own in this situation</p>
+<p class="caps">This long journey has taught me much however, I believe the words of Scott Rogers would be more apt than my own in this situation</p>
     
 <pre>
 <blockquote cite="https://www.goodreads.com/work/quotes/13313639-level-up-the-guide-to-great-video-game-design">
@@ -158,9 +166,7 @@ Below you will also find a list of the classic video games I recreated on my jou
 Don't be afraid to hold onto your unique vision: just be aware that it may not turn out exactly how you envisioned."
 </blockquote>
 </pre>
-    
-
-    
+      
 </div>
     
 </body>
